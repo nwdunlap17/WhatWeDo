@@ -36,8 +36,8 @@ export default class ContentAddBar extends Component{
         <div>
             <h2>Add Media</h2>
             <form onSubmit={this.handleAddContent}>
-            <label>Media Type:</label>
             <select id="button-new"onChange={e=>{this.setState({contentType: e.target.value})}}>
+                <label>Media Type:</label>
                 <option value=''>(Auto)</option>
                 <option value='movie'>Movie</option>
                 <option value='show'>Show</option>

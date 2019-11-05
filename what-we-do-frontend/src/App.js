@@ -59,13 +59,16 @@ class App extends Component{
     
     return (
     <div className="App">
-      <div id="topLevel">
       <Router history={this.state.history}>
+      
         {this.handleRedirect()}
         
         <Route path='/user'>
-          <Navbar/>
+          
+            <Navbar/>
+          
         </Route>
+    
 
         <Route path='/signin'>
           <Title/>
@@ -95,7 +98,6 @@ class App extends Component{
         
        
       </Router>
-      </div>
     </div>
     )
   }

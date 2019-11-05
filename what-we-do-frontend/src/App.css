@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #8fe378; /**/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,31 +51,14 @@
 body {
   margin: 0;
   height: 100%;
-  background:  #f2f2f2;
+  background:  #85b4ff;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 
-
-#topLevel {
-  display:grid;
-  grid-template-areas: 
-    'header'
-    'content'
-    'content'
-    'content'
-    'content'
-    'content'
-    'content'
-    'content';
-  height:100vh;
-  width: 100vw;
-}
-
 .container {
-  grid-area: content;
   text-align: center;
 }
 
@@ -84,7 +67,6 @@ body {
 }
 
 #Title{
-  grid-area: header;
   text-align: center;
   font-size: 80px;
   padding-bottom: 0;
@@ -92,8 +74,12 @@ body {
 }
 
 #navBar{
-  grid-area: header;
-  height: 50px;
+  display:flex;
+  direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  background: #9fff87;
 }
 
 #groupContainer{
@@ -105,7 +91,9 @@ body {
 }
 
 #groupSelector{
+  background-color: #3be640;
   grid-area: selector;
+  padding-top: 10px;
   max-height: 1vh;
   min-height: 100px;
 }
@@ -120,7 +108,7 @@ body {
 }
 
 #groupMembers{
-  background: #F7DBAB;
+  background: #ffb787;
   grid-area: sidebar;
 }
 
@@ -141,7 +129,7 @@ body {
  margin-left: 2vw;
 }
 
-#button-new{
+/* #button-new{
  text-align: center;
  cursor: pointer;
  font-size:22px;
@@ -216,13 +204,13 @@ body {
 
 #button-two:hover{
   background-color: #ABD1F8;
-}
+} */
 
-#button-two:active {
+/* #button-two:active {
   background-color: #C9E4FF;
   box-shadow: 0 5px #95a5a6;
   transform: translateY(4px);
-}
+} */
 .description{
   height:100px;
   overflow:scroll;
@@ -234,4 +222,10 @@ body {
 
 #groupMembers{
   list-style: none;
+}
+
+
+.NavBarLink{
+  font-size: 16px;
+  color: black;
 }

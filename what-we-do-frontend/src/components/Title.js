@@ -6,7 +6,7 @@ export default class Title extends Component{
         return(
             
             <div id="Title">
-                <p>Randomedia!</p>
+                <p>What We Do</p>
             </div>
         )
     }

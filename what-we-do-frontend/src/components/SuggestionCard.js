@@ -6,7 +6,7 @@ class SuggestionCard extends Component {
     super();
 
     this.state = {
-      isClicked: false
+      isClicked: true
     };
   }
 
@@ -39,9 +39,9 @@ class SuggestionCard extends Component {
       <Card.Description>
         <span id="scroll">{this.props.itemData.wTeaser}</span>
         <br></br>
-        <button id="button-new" onClick={() => this.handleClick()}>
+        {/* <button id="button-new" onClick={() => this.handleClick()}>
           Hide
-        </button>
+        </button> */}
       </Card.Description>
     ) : (
       <Card.Description>

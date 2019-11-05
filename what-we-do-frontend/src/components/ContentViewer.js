@@ -32,10 +32,13 @@ export default class ContentViewer extends Component {
   listContents = () => {
     return this.props.content.map(con => {
       console.log("con", con);
+      let listing = con.title;
+      if(con.category !== ''){ listing = `${listing} (${con.category})`}
+
       if (this.state.showRemoveButtons) {
         return (
           <li key={`${con.title} list`}>
-            {con.title} ({con.category})
+            {listing}
             <button
               id="button-new"
               key={`${con.title} button`}
@@ -49,7 +52,7 @@ export default class ContentViewer extends Component {
       } else {
         return (
           <li key={`${con.title} list`}>
-            {con.title} ({con.category})
+            {listing}
           </li>
         );
       }
@@ -61,9 +64,13 @@ export default class ContentViewer extends Component {
       <div>
         <h2>My Liked Media</h2>
         <div>{this.listContents()}</div>
+        {this.props.content.length !== 0?
+          
         <button id="unlockBtn" onClick={this.toggleRemoveButtons}>
-          {this.state.showRemoveButtons ? "Lock Content" : "Unlock Content"}
+          {this.state.showRemoveButtons ? "Lock Content" : "Remove Content"}
         </button>
+
+        : null}
       </div>
     );
   }
