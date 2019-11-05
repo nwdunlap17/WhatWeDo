@@ -1,0 +1,237 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+.suggestionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.suggestionContainer > div {
+  flex: 1;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-left: 2vw;
+}
+
+#groups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+#groups > div{
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-left: 2vw;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background:  #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+#topLevel {
+  display:grid;
+  grid-template-areas: 
+    'header'
+    'content'
+    'content'
+    'content'
+    'content'
+    'content'
+    'content'
+    'content';
+  height:100vh;
+  width: 100vw;
+}
+
+.container {
+  grid-area: content;
+  text-align: center;
+}
+
+#logInForm {
+  text-align: center;
+}
+
+#Title{
+  grid-area: header;
+  text-align: center;
+  font-size: 80px;
+  padding-bottom: 0;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#navBar{
+  grid-area: header;
+  height: 50px;
+}
+
+#groupContainer{
+    display: grid;
+    grid-template-areas: 
+    'selector'
+    'viewer';
+  /* background: #FFFFFF */
+}
+
+#groupSelector{
+  grid-area: selector;
+  max-height: 1vh;
+  min-height: 100px;
+}
+
+#groupViewer{
+  grid-area: viewer;
+  display: grid;
+  grid-template-areas:
+  'sidebar suggestion';
+  /* background: #555555; */
+  min-height: 70vh;
+}
+
+#groupMembers{
+  background: #F7DBAB;
+  grid-area: sidebar;
+}
+
+#groupSuggestion{
+  grid-area: suggestion;
+  min-height: 50vh;
+}
+
+#groups {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+#groups > div{
+ box-sizing: border-box;
+ margin-bottom: 10px;
+ margin-left: 2vw;
+}
+
+#button-new{
+ text-align: center;
+ cursor: pointer;
+ font-size:22px;
+ margin: 5px 5px 5px 10px;
+ border-radius: 4px;
+ background-color:#AB7A29;
+ border: none;
+ padding: 4px;
+ width: 100px;
+ height: 45px;
+ border: 1px black;
+ outline: black;
+ transition: all 0.5s;
+ font-family: 'Boogaloo', cursive;
+}
+
+#unlockBtn{
+  text-align: center;
+  cursor: pointer;
+  font-size:22px;
+  margin: 5px 0 5px 10px;
+  border-radius: 4px;
+  background-color:#AB7A29;
+  border: none;
+  padding: 4px;
+  width: 140px;
+  height: 50px;
+  border: 1px black;
+  outline: black;
+  transition: all 0.5s;
+  font-family: 'Boogaloo', cursive;
+ }
+
+#buttonSuggest{
+  text-align: center;
+  cursor: pointer;
+  font-size:22px;
+  margin: 5px 0 5px 10px;
+  border-radius: 4px;
+  background-color:#AB7A29;
+  border: none;
+  padding: 4px;
+  width: 200px;
+  height: 45px;
+  border: 1px black;
+  outline: black;
+  transition: all 0.5s;
+  font-family: 'Boogaloo', cursive;
+}
+
+ #buttonSuggest:hover{
+  background-color: #F7DBAB;
+}
+#button-new:hover{
+  background-color: #F7DBAB;
+}
+#unlockBtn:hover{
+  background-color: #F7DBAB;
+}
+
+#button-two {
+  padding:15px 30px;
+  outline: none;
+  background-color: #5580AB
+  ;
+  border: none;
+  border-radius:5px;
+  box-shadow: 0 9px #95a5a6;
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+}
+
+#button-two:hover{
+  background-color: #ABD1F8;
+}
+
+#button-two:active {
+  background-color: #C9E4FF;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
+}
+.description{
+  height:100px;
+  overflow:scroll;
+}
+
+#initSelect{
+  font-family: 'Lustria', serif;
+}
+
+#groupMembers{
+  list-style: none;
+}
